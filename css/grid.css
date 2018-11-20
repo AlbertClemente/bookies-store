@@ -1,0 +1,90 @@
+/*Flex y Grid*/
+
+
+/*.container {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-template-areas: "header header header header header header header header header header header header""main main main main main main main main main main main main""footer footer footer footer footer footer footer footer footer footer footer footer";
+}*/
+
+header,
+main,
+footer,
+.search-container,
+.listado-tematica {
+    width: 100%;
+}
+
+.nav-container,
+#buscador,
+.listado {
+    max-width: 85.42%;
+    margin: 0 auto;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-template-areas: "logo menu-container menu-container menu-container menu-container menu-container menu-container . . . basket login";
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 30px;
+    grid-template-areas: "mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos mas-vendidos" "listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica listado-tematica ";
+    margin: 0 auto;
+}
+
+.logo {
+    width: 80px;
+    /*grid: 1/2;*/
+    grid: 1;
+    grid-area: logo;
+}
+
+.menu-container {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-area: menu-container;
+    z-index: 1;
+}
+
+.carrito {
+    grid: 11;
+    grid-area: basket;
+}
+
+.login {
+    grid: 12;
+    grid-area: login;
+}
+
+.search {
+    width: 100%;
+    height: 50px;
+    grid-column-start: 1;
+    grid-column-end: 12;
+    grid-area: search;
+}
+
+.mas-vendidos {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-area: mas-vendidos;
+}
+
+.listado-tematica {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 13;
+    grid-area: listado-tematica;
+}

@@ -1,0 +1,312 @@
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .nav-container,
+    #buscador,
+    .listado {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .nav-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 15px;
+        grid-template-areas: "logo logo logo menu-icon menu-icon menu-icon" "menu-container menu-container menu-container menu-container menu-container menu-container" "basket basket basket login login login";
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .logo {
+        max-width: 50%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-area: logo;
+    }
+    .menu-container.responsive {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-area: menu-container;
+        display: block;
+    }
+    .menu>li {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .menu>li>a {
+        display: block;
+    }
+    .sub-cat.mostrar,
+    .sub-cat {
+        width: 100%;
+        position: relative;
+    }
+    .sub-cat.mostrar>li,
+    .sub-cat.mostrar>li a {
+        display: block;
+        width: 100%;
+    }
+
+    .filterContainer{
+        flex-grow: 50;
+    }
+    .filter-items{
+        margin-top: 10px;
+    }
+    #txt-buscador {
+        width: 60%;
+    }
+    .boton-buscar {
+        width: 15%;
+    }
+    .carrito {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: basket;
+        text-align: center
+    }
+    .login {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-area: login;
+        text-align: center;
+    }
+    .menu-container,
+    .sub-cat li,
+    .boton-buscar span {
+        display: none;
+    }
+
+    #menu-responsive {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-area: menu-icon;
+        text-align: right;
+        display: block;
+    }
+
+
+    .libro {
+        flex: 1 0 100%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .nav-container,
+    #buscador,
+    .listado {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .nav-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 15px;
+        grid-template-areas: "logo logo logo menu-icon menu-icon menu-icon" "menu-container menu-container menu-container menu-container menu-container menu-container" "basket basket basket login login login";
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .logo {
+        max-width: 50%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-area: logo;
+    }
+    .menu-container.responsive {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-area: menu-container;
+        display: block;
+    }
+    .menu>li {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .menu>li>a {
+        display: block;
+    }
+    .sub-cat.mostrar,
+    .sub-cat {
+        width: 100%;
+        position: relative;
+    }
+    .sub-cat.mostrar>li,
+    .sub-cat.mostrar>li a {
+        display: block;
+        width: 100%;
+    }
+
+    .filterContainer{
+        flex-grow: 45;
+    }
+    .filter-items{
+        margin-top: 10px;
+    }
+
+    #txt-buscador {
+        width: 75%;
+    }
+    .boton-buscar {
+        width: 10%;
+    }
+    .carrito {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: basket;
+        text-align: center
+    }
+    .login {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-area: login;
+        text-align: center;
+    }
+    .menu-container,
+    .sub-cat li,
+    .boton-buscar span {
+        display: none;
+    }
+
+    #menu-responsive {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-area: menu-icon;
+        text-align: right;
+        display: block;
+    }
+
+    .libro {
+        flex: 1 0 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .nav-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: auto;
+        grid-column-gap: 15px;
+        grid-template-areas: "logo logo . . . menu-icon" "menu-container menu-container menu-container menu-container menu-container menu-container" "basket basket basket login login login";
+        padding: 15px;
+        margin: 0 auto;
+    }
+    .logo {
+        max-width: 50%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-area: logo;
+    }
+    .menu-container.responsive {
+        width: 100%;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-area: menu-container;
+        display: block;
+    }
+    .menu>li {
+        display: block;
+        float: left;
+    }
+    .menu>li>a {
+        display: block;
+    }
+    .sub-cat.mostrar,
+    .sub-cat {
+        width: 100%;
+        position: relative;
+    }
+    .sub-cat.mostrar>li,
+    .sub-cat.mostrar>li a {
+        display: block;
+        width: 100%;
+    }
+    .filterContainer{
+        flex-grow: 20;
+    }
+    .filter-items{
+        margin-top: 10px;
+    }
+    #txt-buscador {
+        width: 70%;
+    }
+    .boton-buscar {
+        width: 10%;
+    }
+    .carrito {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-area: basket;
+        text-align: center
+    }
+    .login {
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 4;
+        grid-column-end: 6;
+        grid-area: login;
+        text-align: center;
+    }
+    .menu-container,
+    .sub-cat li,
+    .boton-buscar span {
+        display: none;
+    }
+    #menu-responsive {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-area: menu-icon;
+        text-align: right;
+        display: block;
+    }
+    .libro {
+        flex: 1 0 50%;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+    #menu-responsive {
+        display: none;
+    }
+    .libro {
+        flex: 1 0 25%;
+    }
+}
+
+@media only screen and (min-width: 1281px) {
+    #menu-responsive {
+        display: none;
+    }
+    .libro {
+        flex: 1 0 25%;
+    }
+}

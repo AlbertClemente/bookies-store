@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|Source+Sans+Pro:300,400,700');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.1;
+    display: block;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size: 48px;
+}
+
+h3{
+    font-size: 36px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+h5{
+    font-size: 24px;
+}
+
+h6{
+    font-size: 18px;
+}
+
+img{
+    display: block;
+    border: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+    nav{
+        display: block;
+        position: relative;
+        background-color: #46E4BC;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav::after,
+    .links ul::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+        .nav-container{
+            width: 1640px;
+            height: 50px;
+            margin: 0 auto;
+            padding: 25px 16px 25px 16px;
+            display: block;
+        }
+            #logo{
+                width: 80px;
+                margin-right: 22px;
+                display: block;
+                position: relative;
+                float: left;
+            }
+            .search{
+                width: 1411px;
+                height: 50px;
+                float: left;
+            }
+
+            #buscador{
+                -webkit-box-shadow: 0px 0px 24px 2px rgba(0,0,0,.16);
+                -moz-box-shadow: 0px 0px 24px 2px rgba(0,0,0,.16);
+                box-shadow: 0px 0px 24px 2px rgba(0,0,0,.16);
+                border-radius: 200px;
+                border: 0;
+            }
+
+            #txt-buscador{
+                width: 1251px;
+                border: 0;
+                border-radius: 200px 0 0 200px;
+                padding: 14px 22px 14px 22px;
+                font-size: 18px;
+                color: #006E52;
+                position: relative;
+                font-family: 'Lato', Arial, Helvetica, sans-serif;
+            }
+
+                #txt-buscador:focus,
+                .boton-buscar{
+                    outline: 0;
+                }
+
+
+            .boton-buscar{
+                width: 115px;
+                height: 50px;
+                border-radius: 0px 200px 200px 0px;
+                -moz-border-radius: 0px 200px 200px 0px;
+                -webkit-border-radius: 0px 200px 200px 0px;
+                border: 0;
+                /*position: absolute;*/
+                background-color: #ACE900;
+                font-size: 15px;
+                color: white;
+                margin-left: -3px;
+                cursor: pointer;
+            }
+                .boton-buscar i{
+                    margin: 4px 6px 0 0;
+                }
+
+                .boton-buscar span{
+                    margin: 0;
+                }
+
+            .login{
+                display: block;
+                float: left;
+                font-size: 16px;
+                padding: 16px 0;
+                margin-left: 22px;
+            }
+            
+                .login a{
+                    text-decoration: none;
+                    color: white;
+                }
+
+                .login i{
+                    margin-right: 5px;
+                }
+
+main{
+    width: 100%;
+    display: block;
+}
+
+.breadcrumb{
+    width: 1640px;
+    display: block;
+    position: relative;
+    margin: 0 auto 40px auto;
+}
+.breadcrumb ul{
+    list-style: none;
+}
+
+.breadcrumb ul li{
+    display: inline-block;
+    padding: 0 22px 0 0;
+    font-size: 16px;
+}
+
+.breadcrumb ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.listado{
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+/*Secciones*/
+.listado{
+    width: 1640px;
+    display: block;
+    padding: 0 16px 0 16px;
+}
+
+.titulo-seccion{
+    font-size: 18px;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.mas-vendidos{
+    width: 100%;
+    background-color: #72226D;
+    color: white;
+    margin: 0 auto;
+    padding: 30px 0 30px 0;
+}
+    .mas-vendidos h4{
+        margin: 12px 0;
+        line-height: 1.1;      
+    }
+
+    .mas-vendidos a{
+        color: white;
+    }
+
+.fila{
+    display: block;
+    width: 1640px;
+    display: flex;
+    flex-direction: row;
+    margin: 25px auto 40px auto;
+}
+
+.libro{
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    width: 24.64%;
+}
+
+    .libro:first-child{
+        margin-left: 0;
+    }
+
+    .libro:last-child{
+        margin-right: 0;
+    }
+
+    .containerImg{
+        display: block;
+        -webkit-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.3);
+        -moz-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.3);
+        box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.3);
+        -webkit-transition: -webkit-box-shadow .2s;
+        transition: box-shadow .2s;
+    }
+
+        .containerImg:hover{
+            -webkit-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.5);
+            -moz-box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.5);
+            box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.5);
+        }
+
+    .cover{
+        width: 100%;
+        border: 0;
+        display: block;
+    }
+
+    .puntuacion{
+        display: block;
+        font-size: 20px;
+        margin: 30px 0 30px 0;
+        letter-spacing: 5px;
+    }
+
+    p{
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .precio_noDescuento{
+        font-size: 18px;
+        text-decoration: line-through;
+        opacity: .7; 
+    }
+
+    a.precio_socio{
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 400;
+        color: #006E52;
+        padding: 16px;
+        background-color: #ACE900;
+        text-decoration: none;
+        -webkit-box-shadow: 0px 0px 24px 2px rgba(0,0,0,.3);
+        -moz-box-shadow: 0px 0px 24px 2px rgba(0,0,0,.3);
+        box-shadow: 0px 0px 24px 2px rgba(0,0,0,.3);
+        border-radius: 200px;
+        -webkit-transition: background-color .2s; /* Safari */
+        transition: background-color .2s;
+    }
+
+    a.precio_socio:hover{
+        color: white;
+        background-color: #46e4bc;
+        -webkit-box-shadow: 0px 0px 24px 2px rgba(0,0,0,.5);
+        -moz-box-shadow: 0px 0px 24px 2px rgba(0,0,0,.5);
+        box-shadow: 0px 0px 24px 2px rgba(0,0,0,.5);
+    }
